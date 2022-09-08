@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap">
+<button onclick="tinhGiaTri()">Tính Toán</button>
+<h1 id="hienthi"></h1>
+
+<script>
+    function tinhGiaTri() {
+        let n = +document.getElementById('nhap').value;
+        let a = 1;
+        for(let i = 1; i <= n; i++) {
+            a = a + i;
+            console.log(a)
+        }
+        document.getElementById('hienthi').innerHTML = a
+    }
+</script>
+</body>
+</html>
